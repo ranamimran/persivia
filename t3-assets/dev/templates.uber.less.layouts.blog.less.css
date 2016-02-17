@@ -1,0 +1,435 @@
+.blog .blog-item {
+  border-bottom: 1px solid #dadedf;
+  margin-bottom: 26px;
+  padding-bottom: 26px;
+}
+@media (min-width: 768px) {
+  .blog .blog-item {
+    margin-bottom: 52px;
+    padding-bottom: 52px;
+  }
+}
+.blog .blog-item article {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.blog .blog-item .item-image {
+  margin-top: 5px;
+  margin-bottom: 26px;
+}
+@media (min-width: 992px) {
+  .blog .blog-item .item-image {
+    margin-bottom: 0;
+  }
+}
+.blog .blog-item .item-image img {
+  width: 100%;
+}
+.blog .blog-item .article-title {
+  font-size: 30px;
+  margin-bottom: 26px;
+}
+.medicare .blog .blog-item .article-title {
+  font-size: 16px;
+}
+.blog .blog-item .article-aside {
+  font-size: 15px;
+  margin-bottom: 13px;
+}
+.medicare .blog .blog-item .article-aside {
+  font-size: 14px;
+}
+.blog .blog-item .article-aside a {
+  color: #96a1a3;
+}
+.blog .blog-item .article-aside a:hover,
+.blog .blog-item .article-aside a:focus,
+.blog .blog-item .article-aside a:active {
+  color: #026899;
+}
+.blog .blog-item .article-aside a span {
+  margin-right: 5px;
+}
+.blog .blog-item .article-aside i {
+  color: #bfc6c7;
+}
+.blog .blog-item .readmore {
+  margin-top: 13px;
+}
+.blog .blog-item .readmore a {
+  border: 2px solid #96a1a3;
+  color: #505656;
+  display: inline-block;
+  padding: 6.5px 13px;
+}
+.blog .blog-item .readmore a:hover,
+.blog .blog-item .readmore a:focus,
+.blog .blog-item .readmore a:active {
+  background: #039be5;
+  border-color: #039be5;
+  color: #ffffff;
+}
+.blog .pagination {
+  float: none;
+}
+.blog .pagination ul {
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .blog .pagination ul {
+    clear: both;
+    display: inline-block;
+    margin-top: 26px;
+  }
+}
+.blog .pagination .counter {
+  margin: 0;
+}
+.big-quote i {
+  color: #bfc6c7;
+  font-size: 30px;
+  margin-right: 13px;
+}
+.style-1 .intro-image {
+  margin-bottom: 26px;
+}
+.style-1 .intro-image .item-image {
+  margin-top: 0;
+}
+.style-1 .intro-image .item-image img {
+  margin-top: 0;
+}
+.style-1 .article-aside dd {
+  display: block;
+}
+@media screen and (max-width: 991px) {
+  .style-1 .article-aside .article-info {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .style-1 .article-aside .article-info {
+    width: 50%;
+  }
+}
+.style-1 .article-aside .blog-date {
+  border-bottom: 1px dotted #ecf0f1;
+  display: block;
+  float: left;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+}
+.style-1 .article-aside .blog-date .date {
+  color: #96a1a3;
+  display: block;
+  float: left;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 1;
+}
+.style-1 .article-aside .blog-date .month-year {
+  color: #96a1a3;
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.style-1 .article-aside .blog-date .month-year strong {
+  display: block;
+}
+@media screen and (max-width: 991px) {
+  .style-1 .article-aside .blog-date .month-year {
+    float: left;
+    margin-left: 13px;
+  }
+}
+@media (min-width: 992px) {
+  .style-1 .article-aside .blog-date {
+    font-size: 20px;
+  }
+}
+.style-1 .article-aside .btn-group {
+  bottom: -26px;
+  top: auto;
+}
+.blog-2 div.blog-item .item-image,
+.blog-detail div.blog-item .item-image {
+  margin-top: 0;
+  margin-bottom: 26px;
+}
+.blog-2 .article-aside .article-info,
+.blog-detail .article-aside .article-info {
+  padding-left: 3px;
+}
+.blog-2 .article-aside .article-info dd,
+.blog-detail .article-aside .article-info dd {
+  margin-bottom: 4px;
+}
+.blog-2 .blog-date,
+.blog-detail .blog-date {
+  border: 3px solid #039be5;
+  display: block;
+  margin-bottom: 13px;
+  text-align: center;
+}
+.blog-2 .blog-date .date,
+.blog-detail .blog-date .date {
+  color: #039be5;
+  display: block;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1;
+  padding-top: 8px;
+}
+@media (min-width: 992px) {
+  .blog-2 .blog-date .date,
+  .blog-detail .blog-date .date {
+    font-size: 60px;
+  }
+}
+.blog-2 .blog-date .month-year,
+.blog-detail .blog-date .month-year {
+  color: #96a1a3;
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .blog-2 .blog-date,
+  .blog-detail .blog-date {
+    font-size: 20px;
+  }
+}
+.blog-2 .article-image-intro,
+.blog-detail .article-image-intro {
+  margin-top: 0;
+  margin-bottom: 26px;
+  max-height: 336px;
+  overflow: hidden;
+}
+.blog-detail .item-image {
+  margin-bottom: 26px;
+}
+.blog-detail .item-image img {
+  max-width: 100%;
+  margin-top: 0;
+  width: 100%;
+}
+.blog-detail .article-aside {
+  padding-top: 5px;
+}
+.blog-music-news article {
+  margin-top: 0;
+}
+.blog-music-news .item-image img {
+  margin-top: 0;
+}
+.blog-music-video.com_content.view-article .t3-mainbody.container > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.blog-music-video.com_content.view-article .t3-mainbody.container,
+.blog-music-video.com_content.view-article .t3-content {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+.blog-music-video.com_content.view-article .masthead,
+.blog-music-video.com_content.view-article .ja-submenu {
+  display: none;
+}
+.blog-music-video.com_content.view-article .article-header {
+  text-align: center;
+  padding: 0;
+  margin-top: 52px;
+}
+.blog-music-video.com_content.view-article .article-aside {
+  text-align: center;
+  margin-bottom: 52px;
+}
+.blog-music-video.com_content.view-article .article-info {
+  float: none;
+  display: inline-block;
+}
+.blog-music-video.com_content.view-article .article-video {
+  margin-bottom: 26px;
+  padding-bottom: 26px;
+  border-bottom: 1px solid #dadedf;
+}
+.blog-music-video.com_content.view-article .article-video .video-wrapper {
+  height: 0;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  position: relative;
+}
+.blog-music-video.com_content.view-article .article-video .video-wrapper iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.blog.blog-music-video {
+  overflow: hidden;
+}
+.blog.blog-music-video article {
+  margin-top: 0;
+}
+.blog.blog-music-video .item-content-box .article-title {
+  margin-bottom: 13px;
+  font-size: 16px;
+}
+.blog.blog-music-video .item-content-box .article-aside {
+  margin-bottom: 13px;
+  font-size: 13px;
+}
+.blog.blog-music-video .item-content-box .article-footer {
+  margin-bottom: 0;
+}
+.blog.blog-music-video .images-content {
+  position: relative;
+  margin-bottom: 13px;
+  min-height: 20px;
+}
+.blog.blog-music-video .images-content img {
+  max-width: 100%;
+}
+.blog.blog-music-video .images-content .article-link {
+  display: block;
+}
+.blog.blog-music-video .images-content .article-link:hover i[class^="fa"] {
+  color: #039be5;
+}
+.blog.blog-music-video .images-content i[class^="fa"] {
+  color: #ffffff;
+  font-size: 50px;
+  left: 50%;
+  line-height: 1;
+  margin-left: -22px;
+  margin-top: -22px;
+  opacity: 0.7;
+  position: absolute;
+  top: 50%;
+}
+.blog.blog-music-video .items-leading {
+  border-bottom: 5px solid #ecf0f1;
+  margin-bottom: 52px;
+}
+.blog.blog-music-video .items-leading .leading {
+  min-height: 300px;
+  float: left;
+}
+.blog.blog-music-video .items-leading .leading article {
+  padding: 0 26px;
+}
+.blog.blog-music-video .items-leading.grid-cols-1 .leading {
+  width: 100%;
+}
+.blog.blog-music-video .items-leading.grid-cols-2 .leading {
+  width: 50%;
+}
+.blog.blog-music-video .items-leading.grid-cols-3 .leading {
+  width: 33.33333333%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-3 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video .items-leading.grid-cols-4 .leading {
+  width: 25%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-4 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video .items-leading.grid-cols-5 .leading {
+  width: 20%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-5 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video .items-leading.grid-cols-6 .leading {
+  width: 16.66666667%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-6 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video .items-leading.grid-cols-7 .leading {
+  width: 14.28571429%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-7 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video .items-leading.grid-cols-8 .leading {
+  width: 12.5%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-8 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video .items-leading.grid-cols-9 .leading {
+  width: 11.11111111%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-9 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video .items-leading.grid-cols-10 .leading {
+  width: 10%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-10 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video .items-leading.grid-cols-11 .leading {
+  width: 9.09090909%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-11 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video .items-leading.grid-cols-12 .leading {
+  width: 8.33333333%;
+}
+@media screen and (max-width: 767px) {
+  .blog.blog-music-video .items-leading.grid-cols-12 .leading {
+    width: 100%;
+  }
+}
+.blog.blog-music-video.style-3 .blog-item .article-aside .blog-date {
+  background: #3156A3;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 5px;
+  width: auto;
+  
+  display: inline-block;
+  margin-right: 2px;
+}
+.blog.blog-music-video.style-3 .blog-item .article-info dd {
+  display: block;
+  background: #41C1FF;
+  color: #fff;
+}

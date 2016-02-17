@@ -1,0 +1,55 @@
+<?php // no direct access
+defined( '_JEXEC' ) or die( 'Restricted access' ); 
+
+?>
+
+
+<script src="<?php echo JURI::root(); ?>modules/mod_imgtext/jquery.fadethis.js"></script>
+<script>(function($){
+
+$(document).ready(function(){
+$(window).fadeThis();
+
+});
+
+})(jQuery);</script>
+<?php
+
+$img=$params->get('image');
+
+$desc=$params->get('desc');
+
+?>
+<style>
+.mn{  background-color: #3272DB;
+  color: #fff;
+  padding: 19px 0;}
+</style>
+
+
+
+<div class="row mn">
+	      <div class="col-md-4 slide-left">
+	        <div class="cta-showcase-item">
+	        		          							<p class="cta-showcase-intro">
+	
+		<title></title>
+	
+	
+		</p><p>
+			<span style="font-size:22px;"><span style="color: rgb(255, 255, 255);"><strong><?php $module->title; ?></strong></span></span></p>
+		<p>
+			<?php echo $desc ?></p>
+	
+
+<p></p>
+							
+	          	       
+	        </div>
+	      </div>
+		   <div class="col-md-4 slide-right">
+		    <img src="<?php echo $tpath.$img;?>" alt="">
+		  
+		  </div>
+	    </div>
+</article>

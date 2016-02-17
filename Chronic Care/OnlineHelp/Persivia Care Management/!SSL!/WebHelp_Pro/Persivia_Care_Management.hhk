@@ -1,0 +1,66 @@
+﻿<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="index">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="1001">
+    <param name="Name" value="Error Messages#b1001">
+    <param name="Local" value="Error_Messages.htm#b1001">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="1010">
+    <param name="Name" value="Error Messages#b1010">
+    <param name="Local" value="Error_Messages.htm#b1010">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="2035">
+    <param name="Name" value="Error Messages#b2035">
+    <param name="Local" value="Error_Messages.htm#b2035">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="3300">
+    <param name="Name" value="Error Messages#b3300">
+    <param name="Local" value="Error_Messages.htm#b3300">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Application, starting">
+    <param name="Name" value="Starting the application">
+    <param name="Local" value="Starting_the_application.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Error Messages">
+    <param name="Name" value="Error Messages">
+    <param name="Local" value="Error_Messages.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1001">
+      <param name="Name" value="Error Messages#b1001">
+      <param name="Local" value="Error_Messages.htm#b1001">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="1010">
+      <param name="Name" value="Error Messages#b1010">
+      <param name="Local" value="Error_Messages.htm#b1010">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="2035">
+      <param name="Name" value="Error Messages#b2035">
+      <param name="Local" value="Error_Messages.htm#b2035">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="3300">
+      <param name="Name" value="Error Messages#b3300">
+      <param name="Local" value="Error_Messages.htm#b3300">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Starting the application">
+    <param name="Name" value="Starting the application">
+    <param name="Local" value="Starting_the_application.htm">
+  </object>
+</ul>
+</html>

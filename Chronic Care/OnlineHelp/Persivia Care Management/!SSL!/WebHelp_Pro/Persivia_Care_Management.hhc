@@ -1,0 +1,195 @@
+﻿<html>
+<!-- Sitemap 1.0 -->
+<object type="text/site properties">
+  <param name="FrameName" value="bsscright">
+  <param name="SiteType" value="toc">
+  <param name="Image Width" value="16">
+</object>
+<ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Welcome">
+    <param name="Local" value="Welcome.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="System Requirements">
+    <param name="Local" value="System_Requirements.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="HIPAA">
+    <param name="Local" value="HIPAA.htm">
+  </object>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Getting Started">
+    <param name="Local" value="Getting_Started.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="User Roles and Workflow Views">
+      <param name="Local" value="User_Roles_and_Workflow_Views.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Surveying Patient Data: the Manage Patient Workflow">
+      <param name="Local" value="Surveying_Patient_Data__the_Manage_Patient_Workflow.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Detailing Patient Information: the Workflow Window">
+      <param name="Local" value="Detailing_Patient_Information__the_Workflow_Window.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Graphics and Navigational Tools Common across CM">
+      <param name="Local" value="Graphics_and_Navigational_Tools_Common_across_CM.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Care Manager Activities and Resources">
+    <param name="Local" value="Care_Manager_Activities_and_Resources.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Adding Patients">
+      <param name="Local" value="Adding_Patients.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Tabs and Field Information">
+      <param name="Local" value="Tabs_and_Field_Information.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Managing Care Teams">
+      <param name="Local" value="Managing_Care_Teams.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Determining Eligibility">
+      <param name="Local" value="Determining_Eligibility.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Using Filters to Select Patients">
+      <param name="Local" value="About_Filtering.htm">
+    </object>
+    <ul>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Filtering By Care Status">
+        <param name="Local" value="Filtering_By_Care_Status.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Filtering by Diagnostic Values">
+        <param name="Local" value="Filtering_by_Diagnostic_Values.htm">
+      </object>
+      <li><object type="text/sitemap">
+        <param name="Name" value="Adding a Vital Signs Filter">
+        <param name="Local" value="Adding_a_Vital_Signs_Filter.htm">
+      </object>
+      </ul>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Tabs in the Patient Window">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Patient Tab">
+      <param name="Local" value="Patient_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Insurance Tab">
+      <param name="Local" value="Insurance_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Care Team Tab">
+      <param name="Local" value="Care_Team_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Clinical tab">
+      <param name="Local" value="Clinical_tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Alerts Tab">
+      <param name="Local" value="Alerts_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Assessment Tab">
+      <param name="Local" value="Assessment_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Creating a New Assessment">
+      <param name="Local" value="Creating_a_New_Assessment.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Goals Tab">
+      <param name="Local" value="Goals_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Interventions Tab">
+      <param name="Local" value="Interventions_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Appointments Tab">
+      <param name="Local" value="Appointments_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Care Plan Tab">
+      <param name="Local" value="Care_Plan_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Documentation Tab">
+      <param name="Local" value="Documentation_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Notes Tab">
+      <param name="Local" value="Notes_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Supplies Tab">
+      <param name="Local" value="Supplies_Tab.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="History tab and Patient Timer">
+      <param name="Local" value="History_tab_and_Patient_Timer.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Care Coordination Sessions: Patient Timer">
+      <param name="Local" value="Care_Coordination_Sessions__Patient_Timer.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Change Log Tab">
+      <param name="Local" value="Change_Log_Tab.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Care Physician Activities and Resources">
+    <param name="Local" value="Care_Physician_Activities_and_Resources.htm">
+  </object>
+  <ul>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Displaying a Patient Profile">
+      <param name="Local" value="Displaying_a_Patient_Profile.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Reviewing Care Plans for Approval">
+      <param name="Local" value="Reviewing_Care_Plans_for_Approval.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Adding a Goal to a Patient Profile">
+      <param name="Local" value="Adding_a_Goal_to_a_Patient_Profile.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Adding Assessments and Other Elements to a Patient Profile">
+      <param name="Local" value="Adding_Assessments_and_Other_Elements_to_a_Patient_Profile.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Approving or Rejecting a Care Plan">
+      <param name="Local" value="Approving_or_Rejecting_a_Care_Plan.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Change Log">
+      <param name="Local" value="Change_Log.htm">
+    </object>
+    <li><object type="text/sitemap">
+      <param name="Name" value="Other Actions Available to the Care Physician">
+      <param name="Local" value="Other_Actions_Available_to_the_Care_Physician.htm">
+    </object>
+    </ul>
+  <li><object type="text/sitemap">
+    <param name="Name" value="Contact Us">
+    <param name="Local" value="Contact_Us.htm">
+  </object>
+</ul>
+</html>

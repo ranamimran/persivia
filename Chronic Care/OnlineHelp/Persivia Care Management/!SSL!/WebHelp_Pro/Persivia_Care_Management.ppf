@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE polprojfile>
+<ppfml version="2.00" project="Persivia Care Management">
+ <windowlist>
+  <window name="NewWindow" x="5%" y="5%" width="90%" height="90%" viewtype="doublepane" workspacestyle="DEFAULT" toolbar="off" locationbar="off" menu="off" resizable="yes" statusbar="off" usecurrentwindowsettings="yes" caption="NewWindow" skin="WebHelp_Skin_Files\XP_Blue\XP_Blue.skn">
+   <elements><element name="BrowseSequence" Present="yes" /><element name="SearchInput" Present="no" /><element name="SkinInstruction" value="whskin_ep_ins.ski" />
+   </elements>
+   <agents defaultagent="toc">
+    <agent>toc
+    </agent>
+    <agent>ndx
+    </agent>
+    <agent>nls
+    </agent>
+    <agent>gls
+    </agent>
+   </agents>
+  </window>
+ </windowlist>
+ <contextmap>
+ </contextmap>
+ <topiclist defaulttopic="Welcome.htm">
+  <topic>Assessment_Tab.htm
+  </topic>
+  <topic>Adding_a_Vital_Signs_Filter.htm
+  </topic>
+  <topic>Patient_Tab.htm
+  </topic>
+  <topic>Determining_Eligibility.htm
+  </topic>
+  <topic>Contact_Us.htm
+  </topic>
+  <topic>HIPAA.htm
+  </topic>
+  <topic>Care_Coordination_Sessions__Patient_Timer.htm
+  </topic>
+  <topic>Adding_a_Goal_to_a_Patient_Profile.htm
+  </topic>
+  <topic>Appointments_Tab.htm
+  </topic>
+  <topic>Alerts_Tab.htm
+  </topic>
+  <topic>Filtering_by_Diagnostic_Values.htm
+  </topic>
+  <topic>Graphics_and_Navigational_Tools_Common_across_CM.htm
+  </topic>
+  <topic>Managing_Care_Teams.htm
+  </topic>
+  <topic>Care_Manager_Activities_and_Resources.htm
+  </topic>
+  <topic>Other_Actions_Available_to_the_Care_Physician.htm
+  </topic>
+  <topic>Supplies_Tab.htm
+  </topic>
+  <topic>Starting_the_application.htm
+  </topic>
+  <topic>Reviewing_Care_Plans_for_Approval.htm
+  </topic>
+  <topic>Interventions_Tab.htm
+  </topic>
+  <topic>First_Topic.htm
+  </topic>
+  <topic>Clinical_tab.htm
+  </topic>
+  <topic>Filtering_By_Care_Status.htm
+  </topic>
+  <topic>Detailing_Patient_Information__the_Workflow_Window.htm
+  </topic>
+  <topic>Tabs_and_Field_Information.htm
+  </topic>
+  <topic>Getting_Started.htm
+  </topic>
+  <topic>Change_Log.htm
+  </topic>
+  <topic>Notes_Tab.htm
+  </topic>
+  <topic>Displaying_a_Patient_Profile.htm
+  </topic>
+  <topic>Goals_Tab.htm
+  </topic>
+  <topic>Care_Team_Tab.htm
+  </topic>
+  <topic>About_Filtering.htm
+  </topic>
+  <topic>About.htm
+  </topic>
+  <topic>Surveying_Patient_Data__the_Manage_Patient_Workflow.htm
+  </topic>
+  <topic>Adding_Patients.htm
+  </topic>
+  <topic>Care_Physician_Activities_and_Resources.htm
+  </topic>
+  <topic>Approving_or_Rejecting_a_Care_Plan.htm
+  </topic>
+  <topic>Documentation_Tab.htm
+  </topic>
+  <topic>Welcome.htm
+  </topic>
+  <topic>History_tab_and_Patient_Timer.htm
+  </topic>
+  <topic>Creating_a_New_Assessment.htm
+  </topic>
+  <topic>Insurance_Tab.htm
+  </topic>
+  <topic>Enrolling_Eligible_Patients.htm
+  </topic>
+  <topic>Splash.htm
+  </topic>
+  <topic>User_Roles_and_Workflow_Views.htm
+  </topic>
+  <topic>Change_Log_Tab.htm
+  </topic>
+  <topic>Error_Messages.htm
+  </topic>
+  <topic>System_Requirements.htm
+  </topic>
+  <topic>Adding_Assessments_and_Other_Elements_to_a_Patient_Profile.htm
+  </topic>
+  <topic>Care_Plan_Tab.htm
+  </topic>
+ </topiclist>
+ <projectincludes>
+ </projectincludes>
+ <filenamemap>
+  <filenameentry moniker="wh_languagetype">
+   <filename>en_US
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="toc">
+   <filename>Persivia_Care_Management.hhc
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="ndx">
+   <filename>Persivia_Care_Management.hhk
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="nls">
+   <filename>Persivia_Care_Management.nla
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="gls">
+   <filename>Persivia_Care_Management.glo
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_lngfile">
+   <filename>Persivia_Care_Management.lng
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="wh_stoplist">
+   <filename>Persivia_Care_Management.stp
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="keywordinfo">
+   <filename>SearchOptions.xml
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="hiderankcolumn">
+   <filename>0
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="enabletotalnumberofsearchresults">
+   <filename>1
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="giveandsearch">
+   <filename>1
+   </filename>
+  </filenameentry>
+  <filenameentry moniker="enableandsearch">
+   <filename>0
+   </filename>
+  </filenameentry>
+ </filenamemap>
+</ppfml>

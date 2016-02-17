@@ -1,0 +1,3 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";a:3:{s:4:"body";s:0:"";s:4:"head";a:0:{}s:13:"mime_encoding";s:9:"text/html";}s:6:"result";s:470:"<div class="t3-module module " id="Mod155"><div class="module-inner"><h3 class="module-title "><span>Blog Categories</span></h3><div class="module-ct"><ul class="nav  nav-pills nav-stacked ">
+<li class="item-528 current active">	<a href="/?Itemid=502" >Blog</a></li><li class="item-529">	<a class="menu-news" href="/?Itemid=503" >News &amp; Updates</a></li><li class="item-530">	<a class="menu-tutorials" href="/?Itemid=504" >Tutorials</a></li></ul>
+</div></div></div>";}

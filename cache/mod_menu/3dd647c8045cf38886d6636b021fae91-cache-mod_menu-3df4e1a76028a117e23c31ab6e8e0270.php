@@ -1,0 +1,3 @@
+<?php die("Access Denied"); ?>#x#a:2:{s:6:"output";a:3:{s:4:"body";s:0:"";s:4:"head";a:0:{}s:13:"mime_encoding";s:9:"text/html";}s:6:"result";s:494:"<div class="t3-module module " id="Mod538"><div class="module-inner"><div class="module-ct"><ul class="nav  nav-pills nav-stacked ">
+<li class="item-787"><a href="/solutions/hospital-ambulatory-care-patient-platform" >Hospitals &amp; Ambulatory</a></li><li class="item-788 current active"><a href="/solutions/ehrs-system-integrators" >EHRs &amp; System Integrators</a></li><li class="item-789"><a href="/solutions/accountable-care-reporting" >Accountable Care</a></li></ul>
+</div></div></div>";}

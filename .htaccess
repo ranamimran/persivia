@@ -1,0 +1,325 @@
+##
+# @package    Joomla
+# @copyright  Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.
+# @license    GNU General Public License version 2 or later; see LICENSE.txt
+##
+
+##
+# READ THIS COMPLETELY IF YOU CHOOSE TO USE THIS FILE!
+#
+# The line just below this section: 'Options +FollowSymLinks' may cause problems
+# with some server configurations.  It is required for use of mod_rewrite, but may already
+# be set by your server administrator in a way that disallows changing it in
+# your .htaccess file.  If using it causes your server to error out, comment it out (add # to
+# beginning of line), reload your site in your browser and test your sef url's.  If they work,
+# it has been set by your server administrator and you do not need it set here.
+##
+
+## No directory listings
+IndexIgnore *
+
+## Can be commented out if causes errors, see notes above.
+Options +FollowSymlinks
+Options -Indexes
+
+## Mod_rewrite in use.
+
+RewriteEngine On
+
+## Begin - Rewrite rules to block out some common exploits.
+# If you experience problems on your site block out the operations listed below
+# This attempts to block the most common type of exploit `attempts` to Joomla!
+#
+# Block out any script trying to base64_encode data within the URL.
+RewriteCond %{QUERY_STRING} base64_encode[^(]*\([^)]*\) [OR]
+# Block out any script that includes a <script> tag in URL.
+RewriteCond %{QUERY_STRING} (<|%3C)([^s]*s)+cript.*(>|%3E) [NC,OR]
+# Block out any script trying to set a PHP GLOBALS variable via URL.
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+# Block out any script trying to modify a _REQUEST variable via URL.
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+# Return 403 Forbidden header and show the content of the root homepage
+RewriteRule .* index.php [F]
+#
+## End - Rewrite rules to block out some common exploits.
+
+## Begin - Custom redirects
+#
+# If you need to redirect some pages, or set a canonical non-www to
+# www redirect (or vice versa), place that code here. Ensure those
+# redirects use the correct RewriteRule syntax and the [R=301,L] flags.
+#
+RewriteCond %{HTTP_HOST} ^www\.persivia\.com$ [NC]
+RewriteRule ^(.*)$ http://persivia.com/$1 [R=301,L]
+
+#joe@altosagency.com added 20151218
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=261&Itemid=781 => http://persivia.com/markets
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=261($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=781($|&)
+RewriteRule ^index\.php$ /markets? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=225&Itemid=787 => http://persivia.com/markets/hospital-ambulatory-care-patient-platform
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=225($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=787($|&)
+RewriteRule ^index\.php$ /markets/hospital-ambulatory-care-patient-platform? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=227&Itemid=788 => http://persivia.com/markets/ehrs-system-integrators
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=227($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=788($|&)
+RewriteRule ^index\.php$ /markets/ehrs-system-integrators? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=228&Itemid=789 => http://persivia.com/markets/accountable-care-reporting
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=228($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=789($|&)
+RewriteRule ^index\.php$ /markets/accountable-care-reporting? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=262&Itemid=782 => http://persivia.com/solutions
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=262($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=782($|&)
+RewriteRule ^index\.php$ /solutions? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=272&Itemid=840 => http://persivia.com/solutions/quality-management
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=272($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=840($|&)
+RewriteRule ^index\.php$ /solutions/quality-management? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=266&Itemid=841 => http://persivia.com/solutions/quality-management/meaningful-use
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=266($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=841($|&)
+RewriteRule ^index\.php$ /solutions/quality-management/meaningful-use? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=269&Itemid=844 => http://persivia.com/solutions/quality-management/reporting
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=269($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=844($|&)
+RewriteRule ^index\.php$ /solutions/quality-management/reporting? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=279&Itemid=855 => http://persivia.com/solutions/quality-management/real-time-cqm-navigator
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=279($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=855($|&)
+RewriteRule ^index\.php$ /solutions/quality-management/real-time-cqm-navigator? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=254&Itemid=846 => http://persivia.com/solutions/care-management-tools
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=254($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=846($|&)
+RewriteRule ^index\.php$ /solutions/care-management-tools? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=270&Itemid=847 => http://persivia.com/solutions/care-management-tools/chronic-care-management
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=270($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=847($|&)
+RewriteRule ^index\.php$ /solutions/care-management-tools/chronic-care-management? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=250&Itemid=823 => http://persivia.com/solutions/care-management-tools/disease-registries
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=250($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=823($|&)
+RewriteRule ^index\.php$ /solutions/care-management-tools/disease-registries? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=263&Itemid=832 => http://persivia.com/solutions/care-management-tools/network-performance-management
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=263($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=832($|&)
+RewriteRule ^index\.php$ /solutions/care-management-tools/network-performance-management? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=283&Itemid=861 => http://persivia.com/solutions/care-management-tools/bundled-payment-manager
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=283($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=861($|&)
+RewriteRule ^index\.php$ /solutions/care-management-tools/bundled-payment-manager? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=273&Itemid=849 => http://persivia.com/solutions/persivia-platform
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=273($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=849($|&)
+RewriteRule ^index\.php$ /solutions/persivia-platform? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=244&Itemid=850 => http://persivia.com/solutions/persivia-platform/real-time-recommendations-cds
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=244($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=850($|&)
+RewriteRule ^index\.php$ /solutions/persivia-platform/real-time-recommendations-cds? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=271&Itemid=851 => http://persivia.com/solutions/persivia-platform/clinical-decision-support/big-data-architecture
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=271($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=851($|&)
+RewriteRule ^index\.php$ /solutions/persivia-platform/clinical-decision-support/big-data-architecture? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=category&layout=blog&id=114&Itemid=783 => http://persivia.com/news-events
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=category($|&)
+RewriteCond %{QUERY_STRING} (^|&)layout=blog($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=114($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=783($|&)
+RewriteRule ^index\.php$ /news-events? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=257:news-2&catid=114&Itemid=783 => http://persivia.com/news-events/alias
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=257:news-2($|&)
+RewriteCond %{QUERY_STRING} (^|&)catid=114($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=783($|&)
+RewriteRule ^index\.php$ /news-events/alias? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=280&catid=114&Itemid=783 => http://persivia.com/news-events/alias
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=280($|&)
+RewriteCond %{QUERY_STRING} (^|&)catid=114($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=783($|&)
+RewriteRule ^index\.php$ /news-events/alias? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=256:news-1&catid=114&Itemid=783 => http://persivia.com/news-events/alias
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=256:news-1($|&)
+RewriteCond %{QUERY_STRING} (^|&)catid=114($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=783($|&)
+RewriteRule ^index\.php$ /news-events/alias? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=259&Itemid=784 => http://persivia.com/resources
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=259($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=784($|&)
+RewriteRule ^index\.php$ /resources? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=226&Itemid=785 => http://persivia.com/about-us
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=226($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=785($|&)
+RewriteRule ^index\.php$ /about-us? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=265&Itemid=833 => http://persivia.com/about-us/careers
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=265($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=833($|&)
+RewriteRule ^index\.php$ /about-us/careers? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_contact&view=contact&id=1&Itemid=499 => http://persivia.com/contact-us
+RewriteCond %{QUERY_STRING} (^|&)option=com_contact($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=contact($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=1($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=499($|&)
+RewriteRule ^index\.php$ /contact-us? [L,R=301]
+
+# 301 --- http://persivia.com/contact-us.html => http://persivia.com/contact-us
+RewriteRule ^contact-us\.html$ /contact-us? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=282&Itemid=860 => http://persivia.com/revenue-calculator
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=282($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=860($|&)
+RewriteRule ^index\.php$ /revenue-calculator? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=featured&layout=uber:blank&Itemid=435 => http://persivia.com
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=featured($|&)
+RewriteCond %{QUERY_STRING} (^|&)layout=uber:blank($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=435($|&)
+RewriteRule ^index\.php$ /? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=284:news-4&catid=114&Itemid=783 => http://persivia.com/news-events/284-pulmonary-and-sleep-associates-selects-persivia-chronic-care-management
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=284:news-4($|&)
+RewriteCond %{QUERY_STRING} (^|&)catid=114($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=783($|&)
+RewriteRule ^index\.php$ /news-events/284-pulmonary-and-sleep-associates-selects-persivia-chronic-care-management? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=256:news-1&catid=114&Itemid=783 => http://persivia.com/news-events/256-chronic-care-and-population-health-company-persivia-acquires-alere-analytics-to-help-healthcare-organizations-manage-clinical-and-financial-outcomes-risk
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=256:news-1($|&)
+RewriteCond %{QUERY_STRING} (^|&)catid=114($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=783($|&)
+RewriteRule ^index\.php$ /news-events/256-chronic-care-and-population-health-company-persivia-acquires-alere-analytics-to-help-healthcare-organizations-manage-clinical-and-financial-outcomes-risk? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=280:news-3&catid=114&Itemid=783 => http://persivia.com/news-events/280-persivia-announces-real-time-cqm-navigator-in-support-of-the-meaningful-use-stage-3-final-rule
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=280:news-3($|&)
+RewriteCond %{QUERY_STRING} (^|&)catid=114($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=783($|&)
+RewriteRule ^index\.php$ /news-events/280-persivia-announces-real-time-cqm-navigator-in-support-of-the-meaningful-use-stage-3-final-rule? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=257:news-2&catid=114&Itemid=783 => http://persivia.com/news-events/257-healthcare-technology-veterans-launch-persivia-to-focus-on-population-health,-precision-medicine-and-chronic-care-management-to-enable-providers-to-effectively-manage-patient-populations
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=257:news-2($|&)
+RewriteCond %{QUERY_STRING} (^|&)catid=114($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=783($|&)
+RewriteRule ^index\.php$ /news-events/257-healthcare-technology-veterans-launch-persivia-to-focus-on-population-health,-precision-medicine-and-chronic-care-management-to-enable-providers-to-effectively-manage-patient-populations? [L,R=301]
+
+# 301 --- http://persivia.com/index.php?option=com_content&view=article&id=280&catid=114&Itemid=783 => http://persivia.com/news-events/280-persivia-announces-real-time-cqm-navigator-in-support-of-the-meaningful-use-stage-3-final-rule
+RewriteCond %{QUERY_STRING} (^|&)option=com_content($|&)
+RewriteCond %{QUERY_STRING} (^|&)view=article($|&)
+RewriteCond %{QUERY_STRING} (^|&)id=280($|&)
+RewriteCond %{QUERY_STRING} (^|&)catid=114($|&)
+RewriteCond %{QUERY_STRING} (^|&)Itemid=783($|&)
+RewriteRule ^index\.php$ /news-events/280-persivia-announces-real-time-cqm-navigator-in-support-of-the-meaningful-use-stage-3-final-rule? [L,R=301]
+
+#20151222 joe/ethan added
+RewriteRule ^markets$ http://persivia.com/solutions [R=301,L]
+
+RewriteRule ^markets/hospital-ambulatory-care-patient-platform$ http://persivia.com/solutions/hospital-ambulatory-care-patient-platform [R=301,L]
+
+RewriteRule ^markets/ehrs-system-integrators http://persivia.com/solutions/ehrs-system-integrators [R=301,L]
+
+RewriteRule ^markets/accountable-care-reporting http://persivia.com/solutions/accountable-care-reporting [R=301,L]
+
+## End - Custom redirects
+
+##
+# Uncomment following line if your webserver's URL
+# is not directly related to physical file paths.
+# Update Your Joomla! Directory (just / for root).
+##
+
+# RewriteBase /
+
+## Begin - Joomla! core SEF Section.
+#
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+#
+# If the requested path and file is not /index.php and the request
+# has not already been internally rewritten to the index.php script
+RewriteCond %{REQUEST_URI} !^/index\.php
+# and the requested path and file doesn't directly match a physical file
+RewriteCond %{REQUEST_FILENAME} !-f
+# and the requested path and file doesn't directly match a physical folder
+RewriteCond %{REQUEST_FILENAME} !-d
+# internally rewrite the request to the index.php script
+RewriteRule .* index.php [L]
+#
+## End - Joomla! core SEF Section.

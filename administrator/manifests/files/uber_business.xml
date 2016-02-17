@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="file"
+	version="3.3"
+	client="site"
+	method="upgrade">
+	<name>files_uber_business</name>
+	<author>JoomlArt</author>
+	<creationDate>28 Nov 2014</creationDate>
+	<copyright>(C) 2005 - 2014 JoomlArt.com. All Rights Reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>info@joomlart.com</authorEmail>
+	<authorUrl>www.joomlart.com</authorUrl>
+	<version>2.0.2</version>
+	<description>
+		<![CDATA[
+		Uber Sample site - Business
+		]]>
+	</description>
+	<fileset>
+		<files>
+			<folder>images</folder>
+		</files>
+	</fileset>
+	
+	<scriptfile>install.script.php</scriptfile>
+</extension>

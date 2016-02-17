@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<extension type="module" version="3.1.0" client="site" method="upgrade">
+
+    <name>mod_imgtext</name>
+
+    <author>Deepak Kumar(Sdlclabs Pvt. Ltd)</author>
+
+    <version>1.0.0</version>
+
+    <description>It will show a image and its description</description>
+
+    <files>
+
+        <filename>mod_imgtext.xml</filename>
+
+        <filename module="mod_imgtext">mod_imgtext.php</filename>
+
+        <filename>index.html</filename>
+
+        <filename>helper.php</filename>
+
+        <filename>tmpl/default.php</filename>
+
+        <filename>tmpl/index.html</filename>
+
+    </files>
+
+    <config>
+
+	
+
+	
+
+	
+
+		<fields name="params">
+
+			<fieldset name="basic">
+
+	
+
+	              <field name="image" label="Select an Image" type="media" directory="stories" />
+
+	              <field name="desc" label ="Description" type="editor" width="300" filter="safehtml" />
+                
+			    <field
+					name="layoutc"
+					type="list"
+					default="0"
+					label="Layout"
+					description="Left or right layout">
+					<option
+						value="0">layout1</option>
+					<option
+						value="1">layout2</option>
+				</field>
+
+				  
+
+					
+
+	        </fieldset> 
+
+			
+
+		</fields>
+
+    </config>
+
+</extension>
